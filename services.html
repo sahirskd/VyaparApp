@@ -44,13 +44,6 @@
 
   <script type="text/javascript" language="javascript">
 
-    fetch("./header.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("#header").innerHTML = data;
-  });
 
     fetch("./topBar.html")
   .then(response => {
@@ -88,7 +81,41 @@
 
   <!-- ======= Header ======= -->
   <header id="header">
-   
+    <div class="container d-flex">
+
+      <div class="logo mr-auto">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="/"><img src="./icons/favicon 16x16.ico" alt="" class="img-fluid"></a> -->
+        <h1 class="text-light"><a href="/">Vyapar</a></h1>
+      </div>
+  
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li class="drop-down"><a href="/services.html">Services</a>
+            <ul>
+              <li><a href="/services.html">Web Design</a></li>
+              <li><a href="/services.html">Web Development</a></li>
+              <li><a href="/services.html">Product Management</a></li>
+              <li><a href="/services.html">Marketing</a></li>
+              <li><a href="/services.html">Graphic Design</a></li>
+            </ul>
+          </li>
+  
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/testimonials.html">Testimonials</a></li>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          
+          <li><a href="/contact.html">Contact</a></li>
+          
+        </ul>
+
+
+      </nav><!-- .nav-menu -->
+  
+    </div>
   </header><!-- End Header -->
 
 
